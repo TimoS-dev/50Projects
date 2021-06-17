@@ -5,6 +5,10 @@ const circles = document.querySelectorAll(".circle"); // querySelectorAll brings
 
 let currentActive = 1;
 
+// function: active 1-2 setze progress auf25%, mach ne transition left to right
+
+let test = "";
+
 next.addEventListener("click", function () {
   currentActive++;
   if (currentActive > circles.length) {
