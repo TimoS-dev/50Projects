@@ -5,7 +5,7 @@ labels.forEach((label) => {
     .split("")
     .map(
       (letter, idx) =>
-        `<span style="transition-delay:${idx * 0.09}s">${letter}</span>`
+        `<span style="transition-delay:${idx * 0.05}s">${letter}</span>`
     )
     .join("");
 });
