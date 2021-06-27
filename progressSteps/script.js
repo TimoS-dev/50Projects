@@ -11,18 +11,31 @@ let test = "";
 
 next.addEventListener("click", function () {
   currentActive++;
+  if(currentActive >= circles.length) {
+    next.disabled = true
+  }
   if (currentActive > circles.length) {
     currentActive = circles.length;
+  }
+  if (currentActive > 1) {
+    prev.disabled = false
   }
   update();
 });
 
 prev.addEventListener("click", function () {
   currentActive--;
+  console.log(currentActive);
+  if (currentActive <= 1) {
+    prev.disabled = true
+  }
   if (currentActive < 1) {
     currentActive = 1;
   }
-  console.log(currentActive);
+  if (currentActive < 4) {
+    next.disabled = false
+  }
+  update()
 });
 
 function update() {
@@ -33,4 +46,6 @@ function update() {
       circle.classList.remove("active");
     }
   });
+  const actives = document.querySelectorAll(".active")
+  progress.style.width = (((actives.length -1) / (circles.length -1))*100 ) + "%";
 }

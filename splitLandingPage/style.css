@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+h3 {
+  color: white;
+}
+
+.page {
+  background-color: aqua;
+  width: 50vw;
+  height: 100vh;
+}
+
+#rightPage:hover {
+  background-color: blue;
+  width: 95vw;
+  transition: 0.7s;
+}
+#leftPage:hover {
+  background-color: red;
+  width: 95vw;
+  transition: 0.7s;
+}
+
+.left-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://www.tvmovie.de/assets/2020/06/12/77329-ps5-das-ist-das-finale-design-der-playstation-5.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-page {
+  background-image: url("https://news.xbox.com/de-de/wp-content/uploads/sites/3/2020/03/XboxSeriesXTech_Inline1.jpg?fit=940%2C528&resize=1920%2C1080");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-btn {
+  background-color: rgb(75, 75, 75);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.play-btn:hover {
+  background-color: rgb(77, 37, 37);
+  transition: 0.5s;
+}
+.xbox-btn {
+  background-color: rgb(75, 75, 75);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.xbox-btn:hover {
+  background-color: rgb(35, 112, 67);
+  transition: 0.5s;
+}
