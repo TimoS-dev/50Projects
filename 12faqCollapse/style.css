@@ -1,34 +1,56 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Muli:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
+  font-family: "Muli", sans-serif;
+  background-color: #f0f0f0;
 }
 
-.folder {
-  display: flex;
-  flex-direction: row;
-  width: 500px;
-  border: 1px solid rgb(70, 70, 70);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  margin: 10px;
+h1 {
+  margin: 50px 0 30px;
+  text-align: center;
 }
 
-.icon:hover {
-  cursor: pointer;
+.faq-container {
+  max-width: 600px;
+  margin: 0 auto; /* keeps the inside centered*/
 }
 
-#first {
-  background-color: red;
+.faq {
+  background-color: transparent;
+  border: 1px solid #9fa4a8;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 30px;
+  position: relative;
+  overflow: hidden; /* nothing comes out of the box*/
+  transition: 0.3s ease;
+}
+
+.faq.active {
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq.active::before,
+.faq.active::after {
+  content: "\f075";
+  font-family: "Font Awesome 5 Free";
+  color: green;
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 50px;
+  left: 50px;
+  z-index: 0;
+}
+
+.faq.active::before {
+  color: blue;
+  top: -10px;
+  left: -10px;
+  transform: rotateY(180deg);
 }
