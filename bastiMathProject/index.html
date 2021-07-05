@@ -16,21 +16,27 @@
   </head>
   <body>
     <h1>Zufällige Zahlenkombinationen</h1>
+    <p class="description">Hier können Matheaufgaben geübt werden.</p>
     <div class="container">
       <input type="number" class="number" id="numOne" placeholder="0-9" />
-      <div class="operator">+-*/</div>
+      <div class="operator" id="keyOne">+</div>
       <input type="number" class="number" id="numTwo" placeholder="0-9" />
-      <div class="operator">+-*/</div>
+      <div class="operator" id="keyTwo">-</div>
       <input type="number" class="number" id="numThree" placeholder="0-9" />
-      <div class="operator">+-*/</div>
+      <div class="operator" id="keyThree">+</div>
       <input type="number" class="number" id="numFour" placeholder="0-9" />
       <div class="equal">=</div>
       <div class="result" id="result">0</div>
-      <button class="btn" id="btn" onclick="randomizeResult()">
-        randomize result
-      </button>
-      <button class="btn" id="btn" onclick="checkInput()">check result</button>
     </div>
+    <button class="btn" id="btn" onclick="randomizeAllOperators()">
+      Randomize Operators
+    </button>
+    <button class="btn" id="btn" onclick="randomizeResult()">
+      New Math Problem
+    </button>
+    <button class="btn" id="btn" onclick="calculating()">Check Result</button>
+    <button id="testing" onclick="switching()">testing</button>
     <script src="script.js"></script>
+    <script src="operators.js"></script>
   </body>
 </html>
