@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
+:root {
+  --firstColor: #040303;
+  --secondColor: #3a4e48;
+  --thirdColor: #6a7b76;
+  --fourthColor: #8b9d83;
+  --fifthColor: #beb0a7;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,7 +17,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #222;
-  background-color: khaki;
+  background-color: var(--thirdColor);
 }
 
 .container {
@@ -40,6 +48,14 @@ body {
 .nav.active .container {
   padding: 5px;
   transition: all 0.3s ease-in-out;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 22px;
 }
 
 ul {
@@ -100,9 +116,18 @@ a {
 
 .projects {
   padding: 50px;
-  background-color: lawngreen;
+  background-color: var(--secondColor);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
-.project {
-  background-color: lightblue;
+.projectbox {
+  background-color: var(--thirdColor);
+  margin: 10px 15px;
+  min-width: 400px;
+  max-width: 400px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
