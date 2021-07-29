@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(100, 159, 247);
+  font-family: "roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.bigCup {
+  background-color: white;
+  border: solid 2px rgb(51, 51, 233);
+  border-radius: 3px 3px 40px 40px;
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.remained {
+  color: rgb(0, 102, 255);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  transition: 0.3s ease;
+}
+
+.remained span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.percentage {
+  background-color: rgb(67, 142, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(51, 51, 233);
+  font-size: 30px;
+  font-weight: bold;
+  height: 0px;
+}
+
+.smallCupContainer {
+  display: flex;
+  flex-flow: row wrap;
+  width: 200px;
+}
+
+.smallCup {
+  background-color: white;
+  color: rgb(0, 102, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: solid 2px rgb(51, 51, 233);
+  border-radius: 2px 2px 8px 8px;
+  height: 60px;
+  line-height: 20px;
+  width: 30px;
+  font-size: 12px;
+  margin: 10px;
+}
+
+.smallCup.active {
+  background-color: rgb(67, 142, 255);
+  color: white;
+}
