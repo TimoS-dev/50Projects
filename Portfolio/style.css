@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:wght@400;700&display=swap");
 
 :root {
-  --firstColor: #040303;
+  --firstColor: #000000;
   --secondColor: #3a4e48;
   --thirdColor: #6a7b76;
   --fourthColor: #8b9d83;
@@ -27,7 +27,7 @@ body {
 
 .nav {
   position: fixed;
-  background-color: var(--firstColor);
+  background-color: rgba(0, 0, 0, 0.7);
   top: 0;
   left: 0;
   right: 0;
@@ -154,4 +154,32 @@ img {
 #secondPara,
 #thirdPara {
   cursor: pointer;
+}
+
+.portrait {
+  height: 100vh;
+  width: 550px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+}
+
+.description {
+  font-size: 10px;
 }

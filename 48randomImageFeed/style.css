@@ -11,6 +11,26 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
   margin: 0;
+}
+
+h1 {
+  font-size: 90px;
+}
+
+.container {
+  position: relative;
+  width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 70vh;
+}
+
+img {
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  height: 300px;
 }
