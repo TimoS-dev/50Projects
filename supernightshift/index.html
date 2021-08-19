@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>SuperNightShift</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./images/considerit.png" alt="" />
+      </div>
+      <button class="nav-toggle" id="toggle" aria-label="toggle navigation">
+        <i class="fas fa-arrow-circle-right arrow"></i>
+      </button>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#gameplay" class="nav__link">Gameplay</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Us</a>
+          </li>
+          <li class="nav__item">
+            <a href="#footer" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Intro -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        We are <strong>SuperNightShift</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">Supernightshift</p>
+      <img
+        src="./images/CIT.png"
+        id="logo"
+        alt="SuperNightShift Logo"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- Gameplay -->
+    <section class="gameplay" id="gameplay">
+      <h2 class="section__title section__title--gameplay">Gameplay Elements</h2>
+      <div class="gameplay-sub">
+        <div class="gameplayElement">
+          <h3>Traffic lights</h3>
+          <p>
+            Supernightshift is a minimalistic and strategic mobility and
+            navigation game based on real-time data. Drive through the night
+            streets of Hamburg (and other metropolises) and complete different
+            missions. You'll need the right mix of transport modes and you'll
+            have to find the best route in each level. Watch your travel budget
+            and don't dawdle on your smartphone, or you'll run out of time!
+          </p>
+        </div>
+        <!-- / gameplayElement-->
+
+        <div class="gameplayElement">
+          <h3>Eco Transport Modes</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut eveniet
+            facere rerum voluptatem doloremque aperiam deserunt id neque,
+            commodi velit dolor, fuga pariatur libero explicabo earum,
+            temporibus minus perferendis rem!
+          </p>
+        </div>
+        <!-- / gameplayElement-->
+
+        <div class="gameplayElement">
+          <h3>Decision Making</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut eveniet
+            facere rerum voluptatem doloremque aperiam deserunt id neque,
+            commodi velit dolor, fuga pariatur libero explicabo earum,
+            temporibus minus perferendis rem!
+          </p>
+        </div>
+        <!-- / gameplayElement-->
+      </div>
+      <a href="#footer" class="btn">Contact</a>
+    </section>
+
+    <!-- About Us -->
+    <section class="about-us" id="about">
+      <h2 class="section__title section__title--about">Who are we?</h2>
+      <p class="section__subtitle section__subtitle--about">
+        We are developers with an eye for gaming!
+      </p>
+
+      <div class="about-us__body">
+        <img
+          src="./images/kevin.jpg"
+          alt="kevin"
+          class="photo"
+          id="kevinPhoto"
+        />
+        <p id="kevinText">
+          Kevin Westphal hat als App-Entwickler diverse Android-Apps mit der
+          consider it GmbH entwickelt. Als Realisator verschiedener
+          Theaterinstallationen, u.a. im Fleetstreet-Theater und im
+          Medizinhistorischen Museum Hamburg kennt er sich mit Dramaturgie und
+          visueller Gestaltung bestens aus.
+        </p>
+        <img src="./images/timo.jpg" alt="timo" class="photo" id="timoPhoto" />
+        <p id="timoText">
+          Timo hat als IT-Projektmanager für die Lufthansa Technik AG, Chainstep
+          GmbH, NXP AG und consider it GmbH bereits umfassende Expertise in der
+          Umsetzung vom Konzept zur produktiven Software gesammelt. Durch seine
+          Hobbys in der Front-End-Entwicklung und Musikerstellung kann er seine
+          Ideen effektiv umsetzen.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="more">
+      <h2 class="section__title">More</h2>
+      <p class="section__subtitle">Space for content</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <h2>Contact + Legal</h2>
+      <p>
+        <a class="section__subtitle footer__link" href="./impressum.html"
+          >Impressum</a
+        >
+      </p>
+
+      <p>
+        <a class="section__subtitle footer__link" href="./datenschutz.html"
+          >Datenschutzerklärung</a
+        >
+      </p>
+      <a href="#" class="footer__link">hello@supernightshift.com</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            href="https://consider-it.de/"
+            class="social-list__link"
+            target="_blank"
+            ><i class="far fa-building"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a
+            href="https://instagram.com/"
+            class="social-list__link"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a
+            href="https://supernightshift.com/"
+            class="social-list__link"
+            target="_blank"
+            ><i class="fas fa-gamepad"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
