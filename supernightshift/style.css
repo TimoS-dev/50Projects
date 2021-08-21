@@ -149,6 +149,7 @@ header {
   position: relative;
   font-size: 1.5em;
   color: var(--clr-green);
+  opacity: 0.6;
   transition: 250ms ease-in-out;
 }
 
@@ -360,4 +361,30 @@ h3 {
 .social-list__item {
   padding: 0.5em 1.5em;
   font-size: 2em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1000px;
+  margin: auto auto;
+}
+
+/* Impressum */
+
+.impressum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.datenschutz {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  max-width: 1000px;
+  margin: auto auto;
 }
