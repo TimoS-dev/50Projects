@@ -6,6 +6,8 @@
   --thirdColor: #6a7b76;
   --fourthColor: #8b9d83;
   --fifthColor: #beb0a7;
+  --bs: 0em 1.5em 2.75em rgba(255, 255, 255, 0.15);
+  --bs2: 1.5em 1.5em 2.75em rgba(255, 255, 255, 0.15);
 }
 
 * {
@@ -21,13 +23,18 @@ body {
 }
 
 .container {
+  grid-area: container;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   top: 0;
   left: 0;
   right: 0;
@@ -87,10 +94,8 @@ a {
   background-position: bottom center;
   height: 100vh;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  display: grid;
+  grid-template-areas: "container portrait";
   position: relative;
   z-index: -2;
 }
@@ -102,7 +107,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.95);
   z-index: -1;
 }
 
@@ -148,6 +153,7 @@ img {
   background-color: var(--fifthColor);
   z-index: -3;
   border-radius: 5px 5px 0px 0px;
+  box-shadow: inset 0px 0px 50px 0px rgb(173, 156, 156);
 }
 
 #firstPara,
@@ -157,12 +163,11 @@ img {
 }
 
 .portrait {
-  height: 100vh;
-  width: 550px;
+  grid-area: portrait;
+  height: 150px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  align-self: center;
 }
 
 .circle {
@@ -171,15 +176,5 @@ img {
   background-color: white;
   border-radius: 50%;
   margin: 20px;
-}
-
-.description-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: left;
-}
-
-.description {
-  font-size: 10px;
+  z-index: 1;
 }
