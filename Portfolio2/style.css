@@ -94,7 +94,6 @@ header {
   color: white;
 }
 .menu-btn {
-  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,7 +114,6 @@ header {
 .menu-btn_burger::before,
 .menu-btn_burger::after {
   content: "";
-  position: absolute;
   width: 40px;
   height: 5px;
   background: #333;

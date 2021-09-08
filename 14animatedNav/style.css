@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  background: lightblue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  box-shadow: 2px 5px 25px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+ul.close {
+  width: 0;
+  transition: width 1s ease-out;
+  opacity: 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+}
+
+li {
+  list-style-type: none;
+  padding: 0 10px;
+}
+/* Burger Menu Button */
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 2.5px;
+}
+.menu-btn_burger {
+  width: 30px;
+}
+
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: #333;
+  border-radius: 1px;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn_burger::before {
+  transform: translateY(-5px);
+}
+.menu-btn_burger::after {
+  transform: translateY(5px);
+}
+.menu-btn.open .menu-btn_burger {
+  background: transparent;
+}
+.menu-btn.open .menu-btn_burger::before {
+  transform: rotate(45deg);
+}
+.menu-btn.open .menu-btn_burger::after {
+  transform: rotate(-45deg);
+}
