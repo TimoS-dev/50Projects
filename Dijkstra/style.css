@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+.hide {
+  display: none;
+}
+
+.controller {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 1;
+  background: #f1f1f1;
+  border: 1px solid #ddd;
+  padding: 10px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin: 5px 0 8px;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 5px 15px;
+    }
+  }
+
+  .active {
+    background: #1d48f1;
+    color: white;
+  }
+}
+
+#btn_run_algorithm {
+  display: block;
+  margin-top: 15px;
+  background: #ff7878;
+  color: white;
+  padding: 10px 25px;
+  font-size: 1.4rem;
+}
+
+#notification {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 25px;
+  text-align: center;
+  color: #fff;
+  padding: 6px 25px 5px;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+}
+
+input[type="range"] {
+  width: 100%;
+}

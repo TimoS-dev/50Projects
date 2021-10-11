@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.clock {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background: #f0f0f0;
+}
+
+.secondNeedle {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background: red;
+  width: 70px;
+  height: 2px;
+  transform-origin: top left;
+}
+.minuteNeedle {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background: black;
+  width: 80px;
+  height: 2px;
+  transform-origin: top left;
+}
+.hourNeedle {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background: black;
+  width: 40px;
+  height: 3px;
+  transform-origin: top left;
+}
+
+.point {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  background: black;
+  transform: translate(-50%, -50%);
+}
