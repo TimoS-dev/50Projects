@@ -21,27 +21,29 @@ body {
   display: flex;
 }
 
-.box {
-  height: 80px;
-  width: 80px;
+.empty {
+  height: 150px;
+  width: 150px;
   background: white;
   margin: 10px;
-  border: 2px solid black;
-  cursor: pointer;
+  border: 3px solid black;
 }
 
-.box:hover {
-  border: dotted 2px white;
-  background: rgb(51, 51, 51);
+.hovered {
+  border-style: dashed;
+  border-color: white;
+  background-color: rgb(51, 51, 51);
 }
 
 .fill {
-  background: red;
+  background-image: url("https://source.unsplash.com/random/150x150");
+  height: 145px;
+  width: 145px;
+  cursor: pointer;
 }
 
-.box.hold {
-  border: 2px solid grey;
-  opacity: 0.6;
+.hold {
+  border: 5px solid grey;
 }
 
 @media (max-width: 800px) {
