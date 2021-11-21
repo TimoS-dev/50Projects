@@ -15,12 +15,63 @@
   </head>
   <body>
     <div class="box">
-      <div class="leftbox">
-        <div class="trafficLight">hello</div>
-        <button class="zoomin-btn" onclick="show()">ZOOM IN</button>
-        <button class="zoomout-btn" onclick="zoomout()">ZOOM OUT</button>
-      </div>
       <div class="box" id="map"></div>
+    </div>
+    <button class="button intersection hideBtn" id="hideBtn">
+      EDIT MODE OFF
+    </button>
+    <button class="button intersection hideBtn" id="submitBtn">
+      SUBMIT BUTTON
+    </button>
+    <div class="container" id="container">
+      <input
+        type="number"
+        placeholder="intersection ID"
+        class="input"
+        id="input"
+      />
+      <button
+        class="button intersection"
+        onclick="getIntersectionContent(`initial`)"
+      >
+        Step: initial
+      </button>
+      <button
+        class="button intersection"
+        onclick="getIntersectionContent(`afterFilteringTlWays`)"
+      >
+        Step: afterFilteringTlWays
+      </button>
+      <button
+        class="button intersection"
+        onclick="getIntersectionContent(`afterSeperatingTls`)"
+      >
+        Step: afterSeperatingTls
+      </button>
+      <button
+        class="button intersection"
+        onclick="getIntersectionContent(`afterOrientationProcessing`)"
+      >
+        Step: afterOrientationProcessing
+      </button>
+      <button
+        class="button intersection"
+        onclick="getIntersectionContent(`afterTrimmingIntersectionCenter`)"
+      >
+        Step: afterTrimmingIntersectionCenter
+      </button>
+      <button
+        class="button intersection"
+        onclick="getIntersectionContent(`afterDiscardingEgressLanes`)"
+      >
+        Step: afterDiscardingEgressLanes
+      </button>
+      <button
+        class="button intersection"
+        onclick="getIntersectionContent(`final`)"
+      >
+        Step: final
+      </button>
     </div>
   </body>
 </html>
